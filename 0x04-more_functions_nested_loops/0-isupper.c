@@ -1,11 +1,12 @@
 #include "main.h"
-/* _isupper -prog ckek for uppercase charracter
-* c: variable 
-* return: 0.
+/**
+*_isupper -prog ckesk for uppercase charracter
+* @c: Variable test  
+* return:  Always 0.
 */
 int _isupper(int C)
 {
-if (c >= 'A' && C <= 'z')
+if (C >= 'A' && C <= 'z')
 {
 return (1);
 }
