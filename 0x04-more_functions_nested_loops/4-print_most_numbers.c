@@ -1,7 +1,8 @@
 #include "main"
 
 /**
- * print_most_numbers - function checks for checks for digit (trough 9)
+ * print_most_numbers - function checks for checks for digit (0
+ * trough 9)
  *
  * return : Always 0.
  */
