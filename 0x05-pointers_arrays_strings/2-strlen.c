@@ -1,12 +1,11 @@
 #include "main.h"
-
 /**
- * _strelen - return the length of a string
+ * _strlen - return the length of a string
  * @s: string
  *
  * Return: length
  */
-int _strelen(char *s)
+int _strlen(char *s)
 {
 int longi = 0;
 
@@ -17,3 +16,4 @@ s++;
 }
 return (longi);
 }
+
