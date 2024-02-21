@@ -1,12 +1,11 @@
 #include "main.h"
-
+		
 /**
- * _isdigit - vérifie si un caractère est un chiffre (0 à 9)
- * @c: le caractère à vérifier
- *
- * Retourne : 1 si c est un chiffre, 0 sinon
+ * _isdigit - checks for a digit (0 through 9)
+ * @c: int to be checked
+ * Return: 1 if c is a digit, 0 otherwise
  */
 int _isdigit(int c)
 {
-    return (c >= '0' && c <= '9');
+	return (c >= '0' && c <= '9');
 }

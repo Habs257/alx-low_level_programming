@@ -1,21 +1,31 @@
-#ifndef "main.h"
-/**
- * _strcat - Concatène deux chaînes de caractères.
- * @dest: Chaîne de destination (contient le résultat).
- * @src: Chaîne source (sera ajoutée à la fin de dest).
+#include "main.h"
+ /**
+ * _strcat - concatenates two strings
+ * @dest: input value
+ * @src: input value
  *
- * Retourne: Pointeur vers la chaîne résultante (dest).
+ * Return: void	
  */
 char *_strcat(char *dest, char *src)
 {
-	int i, j;
+	int i;
+	int j;
 
-	for (i = 0; dest[i] != '\0'; i++);
 
-	for (j = 0; src[j] != '\0'; j++)
+	i = 0;
+	while (dest[i] != '\0')
 	{
-		dest[i + j] = src[j];
+		i++;
 	}
+	j = 0;
+	while (src[j] != '\0')
+	{
+		dest[i] = src[j];
+		i++;
+		j++;
+	}		
 
-	dest[i + j] = '\0';
+
+	dest[i] = '\0';
 	return (dest);
+}

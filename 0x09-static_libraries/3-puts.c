@@ -1,15 +1,13 @@
-#ifndef "main.h"
-
-/**
- * _puts - Print a string followed by a newline to stdout
- * @str: String to be printed
- */
+#include "main.h"
 void _puts(char *str)
+#include<stdio.h>
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
+int main(void)
 {
-    while (*str != '\0')
-    {
-        putchar(*str);
-        str++;
-    }
-    putchar('\n');
+	puts("\"Programming is like building a multilingual puzzle");
+	return (0);
 }

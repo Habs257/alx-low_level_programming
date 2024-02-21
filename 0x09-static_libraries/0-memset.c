@@ -1,20 +1,20 @@
 #include "main.h"
 /**
- * The _memset function takes three parameters: a starting address s, a value `b
- * _memset - program fills a block of memory whith a specific value
- * @s: starting address of memory  to be filled
+ * _memset - fill a block of memory with a specific value
+ * @s: starting address of memory to be filled
  * @b: the desired value
- * @n: number of bytes to be charged
+ * @n: number of bytes to be changed
  *
- * return: change array with new value for n byte
+ * Return: changed array with new value for n bytes
  */
 char *_memset(char *s, char b, unsigned int n)
 {
-	int a = 0;
+	int i = 0;
 
-	for (; n > 0; a++)
+
+	for (; n > 0; i++)
 	{
-		s[a] = b;
+		s[i] = b;
 		n--;
 	}
 	return (s);

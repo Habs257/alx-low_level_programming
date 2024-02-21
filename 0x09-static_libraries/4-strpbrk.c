@@ -1,25 +1,25 @@
-#ifndef "main.h"
-
+#include "main.h"
 /**
- * _strpbrk - Search a string for any of a set of bytes
- * @s: String to search
- * @accept: Set of bytes to search for
- *
- * Return: Pointer to the first occurrence in s of any byte in accept,
- * or NULL if no such byte is found.
+ * _strpbrk - Entry point
+ * @s: input
+ * @accept: input
+ * Return: Always 0 (Success)
  */
 char *_strpbrk(char *s, char *accept)
 {
-    while (*s != '\0')
-    {
-        char *check = accept;
-        while (*check != '\0')
-        {
-            if (*s == *check)
-                return s;
-            check++;
-        }
-        s++;
-    }
-    return NULL;
+	int k;
+
+
+	while (*s)
+	{
+		for (k = 0; accept[k]; k++)
+		{
+		if (*s == accept[k])
+		return (s);
+		}
+	s++;
+	}
+
+
+return ('\0');
 }
