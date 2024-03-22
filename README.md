@@ -1,1 +1,2 @@
-0x00. C - Hello, World
+0x00. Python - Hello, World
+this is a project based on python
